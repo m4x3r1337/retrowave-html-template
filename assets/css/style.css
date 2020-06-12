@@ -1,0 +1,74 @@
+*
+{
+	user-select:none;
+}
+
+html,body
+{
+	height:100%;
+	width:100%;
+	overflow:hidden;
+}
+
+body
+{
+	background:#000;
+}
+		
+@font-face
+{
+	src:url("../fonts/2.ttf"); 
+	font-family:Abduction;
+}
+
+@keyframes grail
+{
+	0%
+	{
+		background-position:0 50%;
+	}
+	50%
+	{
+		background-position:100% 50%;
+	}
+	100%
+	{
+		background-position:0 50%;
+	}
+}
+
+#title
+{
+	font-family:Abduction,sans-serif;
+	font-size:3.6rem;
+	animation:grail 2s ease-in-out infinite;
+	background:linear-gradient(135deg,#00ffff,#ff007b);
+	background-size:300%;
+	-webkit-background-clip:text;
+	-webkit-text-fill-color:transparent;
+}
+
+i
+{
+	color:#fff;
+	font-size:2rem;
+	line-height:2rem;
+}
+
+i::before
+{
+	margin-left:0!important;
+	margin-right:0!important;
+}
+	
+a i
+{
+	transition:.3s;
+}
+
+a:hover i
+{
+	color:#ddd!important;
+	text-shadow:0 0 1rem #ff007b;
+	transition:.3s;
+}
